@@ -1,7 +1,7 @@
 {
   "name": "spl-token-issuer-on-eclipse-testnet",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimal JS script to create, mint, and transfer SPL tokens using Solana-compatible blockchain Eclipse Testnet, with secure environment variable support.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
