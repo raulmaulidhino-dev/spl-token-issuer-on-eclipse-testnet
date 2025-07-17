@@ -38,11 +38,13 @@ This script:
 
 ```bash
 npm install
+```
 
 Install missing packages if needed:
 
+```bash
 npm install @solana/web3.js @solana/spl-token bs58 @dotenvx/dotenvx
-
+```
 
 ---
 
@@ -50,9 +52,11 @@ npm install @solana/web3.js @solana/spl-token bs58 @dotenvx/dotenvx
 
 Create a .env file in the project root: (Or you can also rename the .env.example file into .env)
 
+```.env
 FEE_PAYER_PRIVATE_KEY=base58-encoded-private-key
 ALICE_PRIVATE_KEY=base58-encoded-private-key
 BOB_PUBLIC_KEY=your-bob-public-key
+```
 
 You can use tools like solana-keygen or wallets like Phantom/Backpack to export private keys (in base58).
 
@@ -65,16 +69,19 @@ You can use tools like solana-keygen or wallets like Phantom/Backpack to export 
 
 ▶️ Running the Script
 
+```bash
 node index.js
+```
 
 If successful, you will see:
 
+```bash
 Mint address
 
 Associated token accounts for Alice and Bob
 
 Mint and transfer transaction hashes
-
+```
 
 
 ---
@@ -83,17 +90,21 @@ Mint and transfer transaction hashes
 
 You can inspect transactions or token mint using:
 
+```bash
 https://explorer.dev.eclipsenetwork.xyz/address/<MINT_ADDRESS>?cluster=testnet
+```
 
 And transaction:
 
+```bash
 https://explorer.dev.eclipsenetwork.xyz/tx/<TX_HASH>?cluster=testnet
-
+```
 
 ---
 
 📄 Example Output
 
+```bash
 mintPubkey: 3JqA...YBnX
 feePayer: 6KLN...aFvT
 alice: 9FA7...DAn
@@ -102,6 +113,7 @@ tokenAmount: { amount: '0', decimals: 8, uiAmount: 0 }
 mint txhash: 3ksf...ZgH7
 ATA BOB: H98w...1NBp
 transfer txhash: https://explorer.dev.eclipsenetwork.xyz/tx/D45z.../?cluster=testnet
+```
 
 
 ---
